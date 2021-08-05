@@ -1,0 +1,6 @@
+autowrapt==1.0
+epsagon==1.73.0
+future==0.18.2
+six==1.16.0
+urllib3==1.26.6
+wrapt==1.12.1

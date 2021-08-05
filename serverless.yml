@@ -1,0 +1,22 @@
+service: aws-python-docker-demo
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  lambdaHashingVersion: 20201221
+  ecr:
+    images:
+      appimage:
+        path: ./
+
+functions:
+  hello:
+    image:
+      name: appimage
+    # handler: app.handler
+
+# plugins:
+#   - serverless-python-requirements
+# custom:
+#   pythonRequirements:
+#     dockerizePip: non-linux
